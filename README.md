@@ -1,18 +1,34 @@
-# ContactList
+# Contact List App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+Contact List web application built using Angular v9. It uses the randomuser api to source user information.
 
-## Development server
+Consumes data from the Random User API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- https://api.randomuser.me
+- https://api.randomuser.me?results=${configJson.numberCards}`
 
-## Code scaffolding
+Top 120 responses users are coming with alphabetic tabs.
+When you will click on user then we are showing contact details card with username email, phone and address.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Website Live URL
 
-## Build
+https://mkginfo.github.io/contact-list/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Local development steps
+
+> npm install
+
+Run `yarn start for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Build and deployment steps for production
+
+Run `yarn build-prod` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+> npm install -g angular-cli-ghpages
+
+> npm run build-prod
+
+> npm run build-deploy
 
 ## Running unit tests
 
