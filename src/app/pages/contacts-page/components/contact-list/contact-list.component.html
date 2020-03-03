@@ -1,0 +1,15 @@
+<div class="user-list">
+  <div *ngFor="let user of users" class="contact-section">
+    <div class="contact-name" (click)="onUserClick(user)">
+      <strong>{{user.name.last}}, {{user.name.first.toLocaleUpperCase()}}</strong>
+    </div>
+    <div class="content"
+         fxLayout="row"
+         fxLayout.xs="column">
+      <div fxFlex="50" fxFlex.sm="100" fxFlex.md="60" fxFlex.md="80" class="contact-details">
+        <app-contact-details [user]="user" *ngIf="user.selected"></app-contact-details>
+      </div>
+    </div>
+  </div>
+</div>
+

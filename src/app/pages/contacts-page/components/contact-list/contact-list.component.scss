@@ -1,0 +1,26 @@
+:host {
+  .user-list{
+    //-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    //-moz-column-count: 2; /* Firefox */
+    //column-count: 2;
+  }
+
+  .contact-section {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0;
+
+    .contact-name {
+      padding: 5px 0 0 5px;
+      margin: 5px 0 0 0;
+      font-size: 16px;
+      color: #484747;
+    }
+
+    .contact-details {
+      padding-top: 5px;
+      margin: 0 5px;
+    }
+  }
+
+
+}

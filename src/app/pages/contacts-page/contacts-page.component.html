@@ -1,0 +1,15 @@
+<p class="page-nav-title">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+  <span class="vertical-align-super">Home > {{pageTitle}}</span>
+</p>
+
+<h1 class="page-sub-title"> {{pageTitle}} </h1>
+
+<div class="loading" *ngIf="loading;" fxLayout="row" fxLayoutAlign="center">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div *ngIf="!loading;">
+  <app-contact-filters ></app-contact-filters>
+</div>
+

@@ -1,0 +1,91 @@
+<mat-card class="contact-card">
+  <mat-card-content>
+    <div class="bookmarkRibbon">
+      <span class="bookmarkRibbonText">{{user.login.username}}</span>
+    </div>
+    <div class="content"
+         fxLayout="row"
+         fxLayout.xs="column"
+         fxFlexFill >
+      <div fxFlex="20" fxFlex.xs="100">
+        <div mat-card-avatar class="contact-header-image"
+             [style.background]="'url('+user.picture.large+')'">
+        </div>
+      </div>
+      <div fxFlex="80" class="sec2">
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+
+          <div fxFlex="80">
+            <mat-card-title class="contact-name">
+              {{user.name.first.toLocaleUpperCase()}}, {{user.name.last.toLocaleLowerCase()}}
+            </mat-card-title>
+          </div>
+        </div>
+
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+
+          <div fxFlex="20" class="sec1">
+            <strong>E-mail</strong>
+          </div>
+          <div fxFlex="80" class="sec2">
+            {{user.email}}
+          </div>
+        </div>
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+          <div fxFlex="20" class="sec1">
+            <strong>Phone</strong>
+          </div>
+          <div fxFlex="80" class="sec2" >
+            {{user.phone}}
+          </div>
+        </div>
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+          <div fxFlex="20" class="sec1" fxFlex.xs="55">
+            <strong>Street</strong>
+          </div>
+          <div fxFlex="80" class="sec2" >
+            {{user.location.street.number}} {{user.location.street.name}}
+          </div>
+        </div>
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+          <div fxFlex="20" class="sec1" fxFlex.xs="55">
+            <strong>City</strong>
+          </div>
+          <div fxFlex="80" class="sec2" >
+            {{user.location.city}}
+          </div>
+        </div>
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+          <div fxFlex="20" class="sec1" fxFlex.xs="55">
+            <strong>State</strong>
+          </div>
+          <div fxFlex="80" class="sec2" >
+            {{user.location.state}}
+          </div>
+        </div>
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column">
+          <div fxFlex="20" class="sec1" fxFlex.xs="55">
+            <strong>Poscode</strong>
+          </div>
+          <div fxFlex="80" class="sec2" >
+            {{user.location.postcode}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

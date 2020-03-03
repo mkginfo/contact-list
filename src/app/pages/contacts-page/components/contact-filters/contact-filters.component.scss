@@ -1,0 +1,33 @@
+:host {
+
+  ::ng-deep{
+    .mat-tab-label{
+      min-width: auto;
+      min-height: auto;
+      padding: 20px;
+      margin: 0;
+      border: 1px solid #ccc;
+    }
+
+    mat-tab-group{
+      margin: 0 10%;
+    }
+
+    .mat-tab-body-content {
+      background-color: #eeeeee;
+    }
+
+    .mat-badge-medium.mat-badge-above .mat-badge-content {
+      top: 12px;
+    }
+  }
+
+  .mat-tab-labels {
+    min-width: auto;
+    min-height: auto;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+
+}

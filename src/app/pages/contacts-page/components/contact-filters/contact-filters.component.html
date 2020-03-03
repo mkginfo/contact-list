@@ -1,0 +1,16 @@
+<mat-tab-group
+  [color]="'accent'" [backgroundColor]="'primary'"
+  [selectedIndex]="selected.value"
+  (selectedIndexChange)="onSelectedTab($event)">
+  <mat-tab *ngFor="let tab of filters; let index = index">
+    <ng-template mat-tab-label>
+      <span
+        [matBadge]="getUsersCountByFilter(tab)"
+        matBadgeOverlap="false">
+        {{tab.toLocaleUpperCase()}}
+      </span>
+    </ng-template>
+    <app-contact-list
+      [users]="getUsersByFilter(tab)"></app-contact-list>
+  </mat-tab>
+</mat-tab-group>

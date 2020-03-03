@@ -1,0 +1,42 @@
+.contact-card {
+  max-width: 100%;
+}
+
+.contact-header-image {
+  background-size: cover;
+}
+
+.mat-card-avatar {
+  height: 100px;
+  width: 100px;
+  background-position: center center !important;
+  background-size: contain !important;
+}
+
+.contact-name{
+  font-size: 20px;
+  color: #929292;
+}
+
+.bookmarkRibbon {
+  width: 120px;
+  height: 0;
+  border-bottom: 20px solid #045089;
+  border-top: 20px solid #045089;
+  border-left: 15px solid transparent;
+  float: right;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight:700;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+.bookmarkRibbonText {
+  color:white;
+  position: relative;
+  top: -9px;
+  text-align: center;
+  right: -10px;
+}
