@@ -5,6 +5,12 @@
   }
   .ma-icon {
     padding: 0 14px;
+    color: #ffffff;
+    text-decoration: none;
+    
+    :active, :focus {
+      color: #ffffff;
+    }
   }
 
   .ma-spacer {
