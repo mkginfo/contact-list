@@ -1,14 +1,18 @@
 :host {
   .user-list{
-    //-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    //-moz-column-count: 2; /* Firefox */
-    //column-count: 2;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
     margin: 0 30px;
   }
 
   .contact-section {
     border-bottom: 1px solid #cccccc;
-    padding: 10px 0;
+    padding: 10px 5px;
+    list-style-position: inside;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
 
     .contact-name {
       padding: 5px 0 0 5px;
